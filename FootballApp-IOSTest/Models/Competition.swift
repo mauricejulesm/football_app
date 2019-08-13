@@ -8,7 +8,22 @@
 
 import UIKit
 
-class Competition: Codable {
+class Competitions: Codable {
+	let competitions: [Competition]
+	
+	init(compContainer:[Competition]) {
+		self.competitions = compContainer
+	}
+}
 
-	  
+class Competition: Codable {
+		let id: Int
+		let name: String
+		let lastUpdated: String
+
+		init(id:Int,name:String, seasonDate:String) {
+			self.id = id
+			self.name = name
+			self.lastUpdated = seasonDate
+		}
 }
