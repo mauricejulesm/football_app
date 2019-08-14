@@ -9,9 +9,9 @@
 import UIKit
 
 class CompetitionCell: UITableViewCell {
-	@IBOutlet weak var compCountryLabel: UILabel!
-	@IBOutlet weak var compNameLabel: UILabel!
-	@IBOutlet weak var compSeasonDateLable: UILabel!
+	@IBOutlet weak var labelCompCountry: UILabel!
+	@IBOutlet weak var labelCompName: UILabel!
+	@IBOutlet weak var labelCompSeasonDate: UILabel!
 	@IBOutlet weak var countryFlagImgView: UIImageView!
 	
 	override func awakeFromNib() {

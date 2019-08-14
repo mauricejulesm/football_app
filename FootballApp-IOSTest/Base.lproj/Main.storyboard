@@ -139,66 +139,65 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CompetitionCell" rowHeight="114" id="rkU-Zt-yjX" customClass="CompetitionCell" customModule="FootballApp_IOSTest" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="114"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rkU-Zt-yjX" id="PYj-fu-c4N">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rkU-Zt-yjX" id="PYj-fu-c4N">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="113.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UTb-Af-pv2">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="91"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soccer-ball" translatesAutoresizingMaskIntoConstraints="NO" id="UTb-Af-pv2">
+                                                    <rect key="frame" x="5" y="11" width="88" height="91"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="50" id="oZG-NH-FEW"/>
+                                                        <constraint firstAttribute="width" constant="88" id="oZG-NH-FEW"/>
                                                         <constraint firstAttribute="height" constant="91" id="qqL-gs-AXa"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compentition Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqz-Az-n4u">
-                                                    <rect key="frame" x="58" y="14" width="250" height="29"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="173" id="RZR-P3-ly3"/>
-                                                        <constraint firstAttribute="height" constant="29" id="z6W-nn-yti"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Compentition Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qb1-2Z-VQH">
-                                                    <rect key="frame" x="58" y="44" width="250" height="33"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="33" id="kVd-MZ-rWy"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Season Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkU-VV-bM3">
-                                                    <rect key="frame" x="58" y="79" width="250" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="Sl5-Uj-Yyq"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="zee-z6-BzT">
+                                                    <rect key="frame" x="99" y="9.5" width="276" height="94"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compentition Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqz-Az-n4u">
+                                                            <rect key="frame" x="0.0" y="0.0" width="276" height="29"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="173" id="RZR-P3-ly3"/>
+                                                                <constraint firstAttribute="height" constant="29" id="z6W-nn-yti"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Compentition Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qb1-2Z-VQH">
+                                                            <rect key="frame" x="0.0" y="30" width="276" height="33"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="33" id="kVd-MZ-rWy"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Season Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkU-VV-bM3">
+                                                            <rect key="frame" x="0.0" y="64" width="276" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="Sl5-Uj-Yyq"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="UTb-Af-pv2" secondAttribute="bottom" id="Hun-5g-on5"/>
-                                                <constraint firstItem="cqz-Az-n4u" firstAttribute="leading" secondItem="Qb1-2Z-VQH" secondAttribute="leading" id="Iz4-8y-VId"/>
-                                                <constraint firstItem="cqz-Az-n4u" firstAttribute="leading" secondItem="ZkU-VV-bM3" secondAttribute="leading" id="Pbn-cS-zfh"/>
-                                                <constraint firstItem="cqz-Az-n4u" firstAttribute="trailing" secondItem="Qb1-2Z-VQH" secondAttribute="trailing" id="T6F-aM-0vs"/>
-                                                <constraint firstItem="ZkU-VV-bM3" firstAttribute="top" secondItem="Qb1-2Z-VQH" secondAttribute="bottom" constant="2" id="X9d-cN-7nL"/>
-                                                <constraint firstItem="UTb-Af-pv2" firstAttribute="top" secondItem="PYj-fu-c4N" secondAttribute="top" id="ZJc-nL-XnM"/>
-                                                <constraint firstItem="cqz-Az-n4u" firstAttribute="leading" secondItem="UTb-Af-pv2" secondAttribute="trailing" constant="8" symbolic="YES" id="hWE-AR-VrR"/>
-                                                <constraint firstItem="cqz-Az-n4u" firstAttribute="trailing" secondItem="ZkU-VV-bM3" secondAttribute="trailing" id="mcF-6P-Qg1"/>
-                                                <constraint firstItem="UTb-Af-pv2" firstAttribute="leading" secondItem="PYj-fu-c4N" secondAttribute="leading" id="qJG-88-bcG"/>
-                                                <constraint firstItem="cqz-Az-n4u" firstAttribute="top" secondItem="PYj-fu-c4N" secondAttribute="top" constant="14" id="qN3-u2-MGp"/>
-                                                <constraint firstAttribute="bottom" secondItem="ZkU-VV-bM3" secondAttribute="bottom" constant="11.5" id="s5c-1y-60k"/>
-                                                <constraint firstItem="Qb1-2Z-VQH" firstAttribute="top" secondItem="cqz-Az-n4u" secondAttribute="bottom" constant="1" id="tb9-FP-fQ9"/>
+                                                <constraint firstAttribute="trailing" secondItem="zee-z6-BzT" secondAttribute="trailing" id="1LN-06-fbw"/>
+                                                <constraint firstAttribute="bottom" secondItem="UTb-Af-pv2" secondAttribute="bottom" constant="11.5" id="Hun-5g-on5"/>
+                                                <constraint firstItem="zee-z6-BzT" firstAttribute="centerY" secondItem="UTb-Af-pv2" secondAttribute="centerY" id="PX1-gd-etN"/>
+                                                <constraint firstItem="UTb-Af-pv2" firstAttribute="top" secondItem="PYj-fu-c4N" secondAttribute="top" constant="11" id="ZJc-nL-XnM"/>
+                                                <constraint firstItem="UTb-Af-pv2" firstAttribute="leading" secondItem="PYj-fu-c4N" secondAttribute="leading" constant="5" id="qJG-88-bcG"/>
+                                                <constraint firstItem="zee-z6-BzT" firstAttribute="leading" secondItem="UTb-Af-pv2" secondAttribute="trailing" constant="6" id="qZv-Dk-cRr"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="compCountryLabel" destination="cqz-Az-n4u" id="Vmv-op-PHR"/>
-                                            <outlet property="compNameLabel" destination="Qb1-2Z-VQH" id="319-fx-2Lx"/>
-                                            <outlet property="compSeasonDateLable" destination="ZkU-VV-bM3" id="jv7-e4-GZ2"/>
                                             <outlet property="countryFlagImgView" destination="UTb-Af-pv2" id="4pU-s0-Pj9"/>
+                                            <outlet property="labelCompCountry" destination="cqz-Az-n4u" id="Vmv-op-PHR"/>
+                                            <outlet property="labelCompName" destination="Qb1-2Z-VQH" id="319-fx-2Lx"/>
+                                            <outlet property="labelCompSeasonDate" destination="ZkU-VV-bM3" id="jv7-e4-GZ2"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -360,4 +359,7 @@
             <point key="canvasLocation" x="-64.799999999999997" y="112.89355322338831"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="soccer-ball" width="720" height="720"/>
+    </resources>
 </document>

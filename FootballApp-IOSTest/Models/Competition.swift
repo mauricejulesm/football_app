@@ -19,14 +19,14 @@ class Competitions: Codable {
 class Competition: Codable {
 		let area: Area
 		let name: String
-		let currentSeason: Season
-	let lastUpdated :String
+//		let currentSeason: Season
+		let lastUpdated :String
 	
 
-	init(name:String, area:Area, currentSeason:Season, lastUpdated:String) {
+	init(area:Area, name:String, currentseason:Season, lastUpdated:String) {
 			self.name = name
 			self.area = area
-			self.currentSeason = currentSeason
+//			self.currentSeason = currentseason
 			self.lastUpdated = lastUpdated
 		}
 }
@@ -40,10 +40,12 @@ class Area: Codable {
 }
 
 class Season: Codable {
-	let startDate: Date
-	let endDate: Date
+	let id: Int
+	let startDate: String
+	let endDate: String
 
-	init(startDate:Date, endDate:Date) {
+	init(id:Int, startDate:String, endDate:String) {
+		self.id = id
 		self.startDate = startDate
 		self.endDate = endDate
 	}

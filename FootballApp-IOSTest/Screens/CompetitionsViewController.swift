@@ -43,9 +43,12 @@ class CompetitionsViewController: UIViewController, UITableViewDataSource {
 			return UITableViewCell()
 		}
 		
-		cell.compCountryLabel.text = competitions[indexPath.row].area.name
-		cell.compNameLabel.text = "Name: \(competitions[indexPath.row].name)"
-		cell.compSeasonDateLable.text = "Date: \(competitions[indexPath.row].lastUpdated)"
+		cell.labelCompCountry.text = competitions[indexPath.row].area.name
+		cell.labelCompName.text = "Name: \(competitions[indexPath.row].name)"
+		let fullDate = competitions[indexPath.row].lastUpdated
+		let seasonDate = fullDate.components(separatedBy: "T")[0]
+		cell.labelCompSeasonDate.text = "Date: \(seasonDate)"
+		cell.countryFlagImgView.image = UIImage(named: "soccer-ball")
 
 		return cell
 	}
