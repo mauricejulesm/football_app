@@ -43,7 +43,7 @@ class CompetitionsViewController: UIViewController, UITableViewDataSource {
 			return UITableViewCell()
 		}
 		
-		cell.compCountryLabel.text = "Team Id: \(String(competitions[indexPath.row].id))"
+		cell.compCountryLabel.text = competitions[indexPath.row].area.name
 		cell.compNameLabel.text = "Name: \(competitions[indexPath.row].name)"
 		cell.compSeasonDateLable.text = "Date: \(competitions[indexPath.row].lastUpdated)"
 
