@@ -23,7 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	}
 	
 	func checkUserDefaults() {
-		if UserDefaults.standard.value(forKey: "username") != nil {
+		let currentUsername = UserDefaults.standard.string(forKey: "username")
+		
+		if  currentUsername != nil {
+			
 			let vc = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "LoginViewController")
 			let navView = UINavigationController(rootViewController: vc)
 			let shared = UIApplication.shared.delegate as? AppDelegate

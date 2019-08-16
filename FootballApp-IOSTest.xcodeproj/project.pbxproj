@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		512861A92302A8CC0003D9E8 /* CompetitionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512861A82302A8CC0003D9E8 /* CompetitionCell.swift */; };
 		512861AB2302BFF00003D9E8 /* Competition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512861AA2302BFF00003D9E8 /* Competition.swift */; };
+		513DE9952305F30D002D0D54 /* CompetitionDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DE9942305F30D002D0D54 /* CompetitionDetails.swift */; };
+		513DE998230626D0002D0D54 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513DE997230626D0002D0D54 /* Utils.swift */; };
 		5183BBB622FC46D2008DBAAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5183BBB522FC46D2008DBAAB /* AppDelegate.swift */; };
 		5183BBB822FC46D2008DBAAB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5183BBB722FC46D2008DBAAB /* RegisterViewController.swift */; };
 		5183BBBB22FC46D2008DBAAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5183BBB922FC46D2008DBAAB /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		512861A82302A8CC0003D9E8 /* CompetitionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionCell.swift; sourceTree = "<group>"; };
 		512861AA2302BFF00003D9E8 /* Competition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Competition.swift; sourceTree = "<group>"; };
+		513DE9942305F30D002D0D54 /* CompetitionDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionDetails.swift; sourceTree = "<group>"; };
+		513DE997230626D0002D0D54 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		5183BBB222FC46D2008DBAAB /* FootballApp-IOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FootballApp-IOSTest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5183BBB522FC46D2008DBAAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5183BBB722FC46D2008DBAAB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		513DE9962306269C002D0D54 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				513DE997230626D0002D0D54 /* Utils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		5183BBA922FC46D2008DBAAB = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +80,7 @@
 		5183BBB422FC46D2008DBAAB /* FootballApp-IOSTest */ = {
 			isa = PBXGroup;
 			children = (
+				513DE9962306269C002D0D54 /* Utilities */,
 				519C267E2302F08900148177 /* DataControllers */,
 				519C26792302EE7C00148177 /* Cells */,
 				519C26782302EE4300148177 /* Models */,
@@ -87,6 +100,7 @@
 				5183BBB722FC46D2008DBAAB /* RegisterViewController.swift */,
 				5183BBC922FCC2D0008DBAAB /* LoginViewController.swift */,
 				5183BBC722FC7541008DBAAB /* CompetitionsViewController.swift */,
+				513DE9942305F30D002D0D54 /* CompetitionDetails.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -195,7 +209,9 @@
 				5183BBC822FC7541008DBAAB /* CompetitionsViewController.swift in Sources */,
 				512861A92302A8CC0003D9E8 /* CompetitionCell.swift in Sources */,
 				5183BBB822FC46D2008DBAAB /* RegisterViewController.swift in Sources */,
+				513DE998230626D0002D0D54 /* Utils.swift in Sources */,
 				5183BBB622FC46D2008DBAAB /* AppDelegate.swift in Sources */,
+				513DE9952305F30D002D0D54 /* CompetitionDetails.swift in Sources */,
 				519C26802302F0D500148177 /* APICall.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
