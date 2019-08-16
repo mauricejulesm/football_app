@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballApp-IOSTest/Screens/CompetitionsViewController.swift"
-            timestampString = "587607134.678546"
+            timestampString = "587635877.7963589"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballApp-IOSTest/Screens/CompetitionsViewController.swift"
-            timestampString = "587607134.6796809"
+            timestampString = "587635877.796831"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "143"
             endingLineNumber = "143"
-            landmarkName = "downloadJson()"
+            landmarkName = "downloadFootBallData()"
             landmarkType = "7">
             <Locations>
                <Location
@@ -74,12 +74,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballApp-IOSTest/Screens/CompetitionsViewController.swift"
-            timestampString = "587607134.680156"
+            timestampString = "587635877.7971261"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "140"
             endingLineNumber = "140"
-            landmarkName = "downloadJson()"
+            landmarkName = "downloadFootBallData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

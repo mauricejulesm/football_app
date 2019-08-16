@@ -36,7 +36,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 		self.title = "Login Page"
 		
 		// hide keyboard on tap
-		self.hideKeyboardWhenTappedAround()
+		self.hideKeyboardOnScreenTap()
 
 		txtPIN1.delegate = self
 		txtPIN2.delegate = self

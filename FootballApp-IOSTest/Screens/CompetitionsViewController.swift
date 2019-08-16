@@ -27,7 +27,7 @@ class CompetitionsViewController: UIViewController, UITableViewDataSource, UITab
 		self.title = "Competitions List"
 		
 		// hide keyboard on tap
-		self.hideKeyboardWhenTappedAround()
+		self.hideKeyboardOnScreenTap()
 		
 		//		let storedCompList =  cachedComptList.object(forKey: "competitions_list")
 		
@@ -49,7 +49,7 @@ class CompetitionsViewController: UIViewController, UITableViewDataSource, UITab
 		//		}
 		
 		// downloading the data when the view has loaded
-		downloadJson()
+		downloadFootBallData()
 		
 		// removing empty rows
 		tableViewCompetitions.tableFooterView = UIView()
@@ -120,7 +120,7 @@ class CompetitionsViewController: UIViewController, UITableViewDataSource, UITab
 	
 	
 	
-	func downloadJson() {
+	func downloadFootBallData() {
 		
 		var request = URLRequest(url: url!)
 		request.setValue("613f3a07fcce4ac9ae1dbaa022547005", forHTTPHeaderField: "X-Auth-Token")
@@ -128,7 +128,7 @@ class CompetitionsViewController: UIViewController, UITableViewDataSource, UITab
 		
 		URLSession.shared.dataTask(with: request) { data, urlResponse, error in
 			guard let data = data, error == nil, urlResponse != nil else {
-				print("Something went wrong, couldn't fetch data!")
+				print("Something went wrong, couldn't fetch data! Make sure you are connected to the internet and try again")
 				return
 			}
 			print("Successfully fetched data")

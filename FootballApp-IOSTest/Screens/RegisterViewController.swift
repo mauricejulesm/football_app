@@ -31,7 +31,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
 		self.title = "Registartion"
 		
 		// hide keyboard on tap
-		self.hideKeyboardWhenTappedAround()
+		self.hideKeyboardOnScreenTap()
 
 
 		// setting up the 4 digits
