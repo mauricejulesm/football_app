@@ -101,12 +101,12 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
 		// save user credentials if if username is not empty and pin == 4 digits
 		if txtRegisterUsername.text! != "" && pinToRegister.count == 4{
 
-			// TODO better to save on keychain
+			//MARK:- better to save on keychain
 			// saving users details in UserDefaults
 			UserDefaults.standard.set(txtRegisterUsername.text!, forKey: "username")
 			UserDefaults.standard.set(pinToRegister, forKey: "userPIN")
 
-			// TODO use os_log() insead of print
+			//MARK:- use os_log() insead of print
 			// take user to the login screen
 			let loginVc = storyboard?.instantiateViewController(withIdentifier: "LoginViewController")
 			navigationController?.pushViewController(loginVc!, animated: true)
